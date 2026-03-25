@@ -2,14 +2,18 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Tech", href: "#tech" },
-  { label: "Clients", href: "#clients" },
-  { label: "Projects", href: "#projects" },
-  { label: "Team", href: "#team" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", id: "about" },
+  { label: "Services", id: "services" },
+  { label: "Tech", id: "tech" },
+  { label: "Clients", id: "clients" },
+  { label: "Projects", id: "projects" },
+  { label: "Team", id: "team" },
+  { label: "Contact", id: "contact" },
 ];
+
+const scrollTo = (id) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,25 +35,25 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold tracking-tight">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-2xl font-bold tracking-tight">
           <span className="text-cyan-400">Oval</span><span className="text-white">Info</span>
-        </a>
+        </button>
         <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
-            <a
+            <button
               key={l.label}
-              href={l.href}
+              onClick={() => scrollTo(l.id)}
               className="text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium"
             >
               {l.label}
-            </a>
+            </button>
           ))}
-          <a
-            href="#contact"
+          <button
+            onClick={() => scrollTo("contact")}
             className="bg-cyan-500 hover:bg-cyan-400 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
           >
             Get in Touch
-          </a>
+          </button>
         </div>
         <button
           className="md:hidden text-slate-400 text-xl"
@@ -62,14 +66,13 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-slate-900 border-t border-slate-800 px-6 py-4 flex flex-col gap-4">
           {links.map((l) => (
-            <a
+            <button
               key={l.label}
-              href={l.href}
-              className="text-slate-400 hover:text-cyan-400 transition-colors py-1"
-              onClick={() => setOpen(false)}
+              onClick={() => { scrollTo(l.id); setOpen(false); }}
+              className="text-slate-400 hover:text-cyan-400 transition-colors py-1 text-left"
             >
               {l.label}
-            </a>
+            </button>
           ))}
         </div>
       )}

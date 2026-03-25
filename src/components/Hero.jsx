@@ -39,18 +39,18 @@ export default function Hero() {
           platforms to transformative digital health solutions across Europe.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <a
-            href="#services"
+          <button
+            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
             className="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Our Services
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="border border-slate-600 hover:border-cyan-400 text-slate-300 hover:text-cyan-400 px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Contact Us
-          </a>
+          </button>
         </div>
       </motion.div>
       <motion.div
