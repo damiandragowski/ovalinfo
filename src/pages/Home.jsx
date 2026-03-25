@@ -13,13 +13,18 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-slate-950 text-white">
+    <div className="relative text-white">
+      <div
+        className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/zero.jpg')" }}
+      />
+      <div className="fixed inset-0 -z-10 bg-slate-950/85" />
       <Navbar />
       <Hero />
       <About />
       <Services />
 
-      <section id="tech" className="py-24 px-6 bg-slate-900">
+      <section id="tech" className="py-24 px-6 bg-slate-900/60 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -40,7 +45,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-slate-950">
+      <section className="py-24 px-6 bg-slate-950/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

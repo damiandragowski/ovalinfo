@@ -80,7 +80,7 @@ const roleMap = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 bg-slate-950">
+    <section id="projects" className="py-24 px-6 bg-slate-950/70 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -10,14 +10,7 @@ const stats = [
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 -z-10" />
-      <div
-        className="absolute inset-0 opacity-20 -z-10"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 30%, #6366f1 0%, transparent 50%), radial-gradient(circle at 80% 70%, #06b6d4 0%, transparent 50%)",
-        }}
-      />
+      <div className="absolute inset-0 bg-slate-950/50 -z-10" />
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

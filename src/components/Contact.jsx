@@ -21,7 +21,7 @@ export default function Contact() {
   const [lightbox, setLightbox] = useState(null);
 
   return (
-    <section id="contact" className="py-24 px-6 bg-slate-950">
+    <section id="contact" className="py-24 px-6 bg-slate-950/70 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -126,7 +126,7 @@ export default function Contact() {
             </div>
             <div className="mt-10 p-6 bg-slate-900 border border-slate-800 rounded-xl">
               <h4 className="font-semibold text-white mb-2">NIP / VAT</h4>
-              <p className="text-slate-400 text-sm">PL 527-000-00-00</p>
+              <p className="text-slate-400 text-sm">PL 526-272-26-88</p>
               <h4 className="font-semibold text-white mt-4 mb-2">REGON</h4>
               <p className="text-slate-400 text-sm">380000000</p>
             </div>
@@ -195,3 +195,4 @@ export default function Contact() {
     </section>
   );
 }
+

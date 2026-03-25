@@ -25,7 +25,7 @@ const pillars = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 bg-slate-900">
+    <section id="about" className="py-24 px-6 bg-slate-900/60 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

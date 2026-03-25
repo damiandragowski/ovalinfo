@@ -23,7 +23,7 @@ const contactItems = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 border-t border-slate-800 py-16 px-6">
+    <footer className="bg-slate-900/70 backdrop-blur-sm border-t border-slate-800 py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
@@ -84,7 +84,7 @@ export default function Footer() {
             © {new Date().getFullYear()} OvalInfo Sp. z o.o. All rights reserved.
           </p>
           <p className="text-slate-600 text-xs">
-            NIP: PL 527-000-00-00 · REGON: 380000000 · Warsaw, Poland
+            NIP: PL 526-272-26-88 · REGON: 145998061 · Warsaw, Poland
           </p>
         </div>
       </div>
