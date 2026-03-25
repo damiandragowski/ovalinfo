@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const info = [
   { icon: "📍", label: "Address", value: "ul. Złota 59, 00-120 Warsaw, Poland" },
-  { icon: "✉️", label: "Email", value: "contact@ovalinfo.com", href: "mailto:contact@ovalinfo.com" },
-  { icon: "📞", label: "Phone", value: "+48 22 307 50 00", href: "tel:+48223075000" },
+  { icon: "✉️", label: "Email", value: "damiandragowski@gmail.com", href: "mailto:damiandragowski@gmail.com" },
+  { icon: "📞", label: "Phone", value: "+48 509 277 939", href: "tel:+48509277939" },
   { icon: "💼", label: "LinkedIn", value: "linkedin.com/company/ovalinfo", href: "https://linkedin.com/company/ovalinfo" },
 ];
 

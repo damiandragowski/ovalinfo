@@ -1,8 +1,25 @@
+const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
 const links = {
-  Company: ["About Us", "Our Team", "Services", "Projects"],
-  Expertise: ["Telecom & Billing", "eHealth", "Banking & Fintech", "Cloud & DevOps"],
-  Contact: ["contact@ovalinfo.com", "+48 22 307 50 00", "ul. Złota 59, Warsaw"],
+  Company: [
+    { label: "About Us", id: "about" },
+    { label: "Our Team", id: "team" },
+    { label: "Services", id: "services" },
+    { label: "Projects", id: "projects" },
+  ],
+  Expertise: [
+    { label: "Telecom & Billing", id: "services" },
+    { label: "eHealth", id: "services" },
+    { label: "Banking & Fintech", id: "services" },
+    { label: "Cloud & DevOps", id: "services" },
+  ],
 };
+
+const contactItems = [
+  { label: "damiandragowski@gmail.com", href: "mailto:damiandragowski@gmail.com" },
+  { label: "+48 509 277 939", href: "tel:+48509277939" },
+  { label: "ul. Złota 59, Warsaw", href: "https://maps.google.com/?q=Zlota+59+Warsaw" },
+];
 
 export default function Footer() {
   return (
@@ -10,9 +27,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="text-2xl font-bold mb-4">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="text-2xl font-bold mb-4 block"
+            >
               <span className="text-cyan-400">Oval</span><span className="text-white">Info</span>
-            </div>
+            </button>
             <p className="text-slate-400 text-sm leading-relaxed mb-4">
               Enterprise IT consultancy based in Warsaw, Poland. Specialists in Telecom, Banking, eHealth, and Cloud-native solutions.
             </p>
@@ -29,15 +49,35 @@ export default function Footer() {
               <h4 className="text-white font-semibold mb-4">{category}</h4>
               <ul className="space-y-2">
                 {items.map((item) => (
-                  <li key={item}>
-                    <span className="text-slate-400 hover:text-cyan-400 text-sm cursor-pointer transition-colors">
-                      {item}
-                    </span>
+                  <li key={item.label}>
+                    <button
+                      onClick={() => scrollTo(item.id)}
+                      className="text-slate-400 hover:text-cyan-400 text-sm transition-colors text-left"
+                    >
+                      {item.label}
+                    </button>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2">
+              {contactItems.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel="noreferrer"
+                    className="text-slate-400 hover:text-cyan-400 text-sm transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
@@ -51,4 +91,3 @@ export default function Footer() {
     </footer>
   );
 }
-
