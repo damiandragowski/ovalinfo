@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import OvalinfoO from "./OvalinfoO";
 
 const stats = [
   { value: "20+", label: "Years Experience" },
@@ -21,7 +22,7 @@ export default function Hero() {
           Enterprise IT Solutions · Warsaw, Poland
         </span>
         <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-          <span className="text-white">Oval</span>
+          <OvalinfoO /><span className="text-white">val</span>
           <span className="text-cyan-400">Info</span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-300 mb-4 max-w-3xl mx-auto">

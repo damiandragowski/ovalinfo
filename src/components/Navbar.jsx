@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import OvalinfoO from "./OvalinfoO";
 
 const links = [
   { label: "About", id: "about" },
@@ -36,7 +37,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-2xl font-bold tracking-tight">
-          <span className="text-cyan-400">Oval</span><span className="text-white">Info</span>
+          <OvalinfoO /><span className="text-cyan-400">val</span><span className="text-white">Info</span>
         </button>
         <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
