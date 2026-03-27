@@ -2,81 +2,81 @@ import { motion } from "framer-motion";
 
 const team = [
   {
-    name: "Krzysztof Owalski",
+    name: "Damian Drągowski",
     title: "CEO & Co-Founder",
-    email: "k.owalski@ovalinfo.com",
+    email: "damian.dragowski@gmail.com",
     bio: "20+ years leading enterprise IT programs. Chief Software Architect for the ACSE transformation program managing ~100 engineers across 10 Scrum teams.",
     color: "bg-cyan-600",
     skills: ["Architecture", "Leadership", "Java", "C++", "Oracle BRM"],
   },
   {
-    name: "Marcin Ostrowski",
+    name: "Jan Kowalski",
     title: "Chief Technology Officer",
-    email: "m.ostrowski@ovalinfo.com",
+    email: "",
     bio: "Cloud-native architect and DevOps expert. Specialist in Kubernetes, event-driven microservices, and multi-cloud deployments on Azure, GCP, and OCI.",
     color: "bg-indigo-600",
     skills: ["Cloud", "Microservices", "DevOps", "Kafka", "Kubernetes"],
   },
   {
-    name: "Anna Kowalczyk",
+    name: "Anna Nowak",
     title: "Head of Frontend Engineering",
-    email: "a.kowalczyk@ovalinfo.com",
+    email: "",
     bio: "Expert in Angular and React microfrontend architectures. Deep experience with ngrx, Redux, and RxJS for large-scale state management.",
     color: "bg-violet-600",
     skills: ["Angular", "React", "ngrx", "TypeScript", "nx"],
   },
   {
-    name: "Piotr Zawadzki",
+    name: "Piotr Wojciechowski",
     title: "Lead Backend Engineer",
-    email: "p.zawadzki@ovalinfo.com",
+    email: "",
     bio: "Java and Spring Boot specialist with expertise in event-driven microservices, GraphQL APIs, Camunda BPM, and database optimization.",
     color: "bg-emerald-600",
     skills: ["Java", "Spring Boot", "Kafka", "GraphQL", "Camunda"],
   },
   {
-    name: "Łukasz Wiśniewski",
+    name: "Maria Szymankowska",
     title: "Head of DevOps & Cloud",
-    email: "l.wisniewski@ovalinfo.com",
+    email: "",
     bio: "Multi-cloud infrastructure architect. Builds robust CI/CD pipelines on GitHub Actions, GitLab, and Azure DevOps with Terraform and Helm.",
     color: "bg-orange-600",
     skills: ["Azure", "GCP", "Terraform", "Helm", "ArgoCD"],
   },
   {
-    name: "Katarzyna Nowak",
+    name: "Krzysztof Lewandowski",
     title: "eHealth Solutions Architect",
-    email: "k.nowak@ovalinfo.com",
+    email: "",
     bio: "Architect for eHealth and fintech platforms. PSD2 banking integration specialist with deep experience in Keycloak and multi-tenant security.",
     color: "bg-pink-600",
     skills: ["eHealth", "PSD2", "Keycloak", "Angular", "Security"],
   },
   {
-    name: "Robert Jankowski",
+    name: "Ewa Dombrowska",
     title: "Telecom & Billing Specialist",
-    email: "r.jankowski@ovalinfo.com",
+    email: "",
     bio: "Oracle BRM expert with hands-on C++ and PLSQL experience. Performance tuning for 4G/5G OCS billing on Telia and Telenor Pakistan deployments.",
     color: "bg-blue-600",
     skills: ["Oracle BRM", "C++", "PLSQL", "ECE", "Performance"],
   },
   {
-    name: "Monika Szymańska",
+    name: "Tomasz Zielinski",
     title: "Delivery Manager",
-    email: "m.szymanska@ovalinfo.com",
+    email: "",
     bio: "Certified SAFe and Prince2 practitioner managing multi-team delivery across enterprise transformation programs. Experienced in managing 100+ people projects.",
     color: "bg-teal-600",
     skills: ["SAFe", "Prince2", "Agile", "Scrum", "Program Mgmt"],
   },
   {
-    name: "Tomasz Wróbel",
+    name: "Agnieszka Jankowska",
     title: "Performance & Oracle Engineer",
-    email: "t.wrobel@ovalinfo.com",
+    email: "",
     bio: "Performance engineering specialist. JMeter and Grinder automation, Oracle BRM customization, ELK observability stack implementation.",
     color: "bg-rose-600",
     skills: ["JMeter", "Grinder", "ELK", "Oracle", "Splunk"],
   },
   {
-    name: "Agnieszka Lis",
+    name: "Michal Malinowski",
     title: "Senior Frontend Developer",
-    email: "a.lis@ovalinfo.com",
+    email: "",
     bio: "Frontend developer specializing in patient and personnel portals for eHealth. Angular, React, and microfrontend module federation expert.",
     color: "bg-fuchsia-600",
     skills: ["Angular", "React", "RxJS", "Microfrontends", "Redux"],
@@ -136,12 +136,14 @@ export default function Team() {
                   </span>
                 ))}
               </div>
-              <a
-                href={`mailto:${member.email}`}
-                className="text-cyan-400 hover:text-cyan-300 text-xs transition-colors break-all"
-              >
-                {member.email}
-              </a>
+              {member.email && (
+                <a
+                  href={`mailto:${member.email}`}
+                  className="text-cyan-400 hover:text-cyan-300 text-xs transition-colors break-all"
+                >
+                  {member.email}
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
@@ -149,4 +151,3 @@ export default function Team() {
     </section>
   );
 }
-

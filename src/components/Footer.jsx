@@ -18,7 +18,7 @@ const links = {
 const contactItems = [
   { label: "damiandragowski@gmail.com", href: "mailto:damiandragowski@gmail.com" },
   { label: "+48 509 277 939", href: "tel:+48509277939" },
-  { label: "ul. Złota 59, Warsaw", href: "https://maps.google.com/?q=Zlota+59+Warsaw" },
+  { label: "ul. Ryżowa 44/108, Warsaw", href: "https://maps.google.com/?q=Zlota+59+Warsaw" },
 ];
 
 export default function Footer() {
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} OvalInfo Sp. z o.o. All rights reserved.
+            © {new Date().getFullYear()} OvalInfo All rights reserved.
           </p>
           <p className="text-slate-600 text-xs">
             NIP: PL 526-272-26-88 · REGON: 145998061 · Warsaw, Poland

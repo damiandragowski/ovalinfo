@@ -11,7 +11,7 @@ const images = [
 ];
 
 const info = [
-  { icon: "📍", label: "Address", value: "ul. Złota 59, 00-120 Warsaw, Poland" },
+  { icon: "📍", label: "Address", value: "ul. Ryżowa 44/108, 02-495 Warsaw, Poland" },
   { icon: "✉️", label: "Email", value: "damiandragowski@gmail.com", href: "mailto:damiandragowski@gmail.com" },
   { icon: "📞", label: "Phone", value: "+48 509 277 939", href: "tel:+48509277939" },
   { icon: "💼", label: "LinkedIn", value: "linkedin.com/company/ovalinfo", href: "https://linkedin.com/company/ovalinfo" },
@@ -128,7 +128,7 @@ export default function Contact() {
               <h4 className="font-semibold text-white mb-2">NIP / VAT</h4>
               <p className="text-slate-400 text-sm">PL 526-272-26-88</p>
               <h4 className="font-semibold text-white mt-4 mb-2">REGON</h4>
-              <p className="text-slate-400 text-sm">380000000</p>
+              <p className="text-slate-400 text-sm">145998061</p>
             </div>
           </motion.div>
 
