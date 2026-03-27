@@ -74,7 +74,7 @@ const team = [
     skills: ["JMeter", "Grinder", "ELK", "Oracle", "Splunk"],
   },
   {
-    name: "Michal Malinowski",
+    name: "Franciszek Dudek",
     title: "Senior Frontend Developer",
     email: "",
     bio: "Frontend developer specializing in patient and personnel portals for eHealth. Angular, React, and microfrontend module federation expert.",
