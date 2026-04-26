@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>/* no styles needed */</style>
+  </defs>
+  <!-- Four colored segments forming an oval O like the page mark -->
+  <path d="M50,6 A44,44 0 0,1 94,50 L77,50 A27,27 0 0,0 50,23 Z" fill="#4285F4"/>
+  <path d="M94,50 A44,44 0 0,1 50,94 L50,77 A27,27 0 0,0 77,50 Z" fill="#EA4335"/>
+  <path d="M50,94 A44,44 0 0,1 6,50 L23,50 A27,27 0 0,0 50,77 Z" fill="#FBBC05"/>
+  <path d="M6,50 A44,44 0 0,1 50,6 L50,23 A27,27 0 0,0 23,50 Z" fill="#34A853"/>
+</svg>
+

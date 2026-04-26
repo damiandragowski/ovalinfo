@@ -10,7 +10,7 @@ const team = [
     skills: ["Architecture", "Leadership", "Java", "C++", "Oracle BRM"],
   },
   {
-    name: "Jan Kowalski",
+    name: "M**** K********",
     title: "Chief Technology Officer",
     email: "",
     bio: "Cloud-native architect and DevOps expert. Specialist in Kubernetes, event-driven microservices, and multi-cloud deployments on Azure, GCP, and OCI.",
@@ -18,7 +18,7 @@ const team = [
     skills: ["Cloud", "Microservices", "DevOps", "Kafka", "Kubernetes"],
   },
   {
-    name: "Anna Nowak",
+    name: "A******** P********",
     title: "Head of Frontend Engineering",
     email: "",
     bio: "Expert in Angular and React microfrontend architectures. Deep experience with ngrx, Redux, and RxJS for large-scale state management.",
@@ -26,7 +26,7 @@ const team = [
     skills: ["Angular", "React", "ngrx", "TypeScript", "nx"],
   },
   {
-    name: "Piotr Wojciechowski",
+    name: "Franciszek Drągowski",
     title: "Lead Backend Engineer",
     email: "",
     bio: "Java and Spring Boot specialist with expertise in event-driven microservices, GraphQL APIs, Camunda BPM, and database optimization.",
@@ -34,7 +34,7 @@ const team = [
     skills: ["Java", "Spring Boot", "Kafka", "GraphQL", "Camunda"],
   },
   {
-    name: "Maria Szymankowska",
+    name: "M******** W*****",
     title: "Head of DevOps & Cloud",
     email: "",
     bio: "Multi-cloud infrastructure architect. Builds robust CI/CD pipelines on GitHub Actions, GitLab, and Azure DevOps with Terraform and Helm.",
@@ -42,7 +42,7 @@ const team = [
     skills: ["Azure", "GCP", "Terraform", "Helm", "ArgoCD"],
   },
   {
-    name: "Krzysztof Lewandowski",
+    name: "Ł***** K*******",
     title: "eHealth Solutions Architect",
     email: "",
     bio: "Architect for eHealth and fintech platforms. PSD2 banking integration specialist with deep experience in Keycloak and multi-tenant security.",
@@ -50,7 +50,7 @@ const team = [
     skills: ["eHealth", "PSD2", "Keycloak", "Angular", "Security"],
   },
   {
-    name: "Ewa Dombrowska",
+    name: "K******** W*****",
     title: "Telecom & Billing Specialist",
     email: "",
     bio: "Oracle BRM expert with hands-on C++ and PLSQL experience. Performance tuning for 4G/5G OCS billing on Telia and Telenor Pakistan deployments.",
@@ -58,7 +58,7 @@ const team = [
     skills: ["Oracle BRM", "C++", "PLSQL", "ECE", "Performance"],
   },
   {
-    name: "Tomasz Zielinski",
+    name: "Marta Drągowska",
     title: "Delivery Manager",
     email: "",
     bio: "Certified SAFe and Prince2 practitioner managing multi-team delivery across enterprise transformation programs. Experienced in managing 100+ people projects.",
@@ -66,7 +66,7 @@ const team = [
     skills: ["SAFe", "Prince2", "Agile", "Scrum", "Program Mgmt"],
   },
   {
-    name: "Agnieszka Jankowska",
+    name: "O*** K********",
     title: "Performance & Oracle Engineer",
     email: "",
     bio: "Performance engineering specialist. JMeter and Grinder automation, Oracle BRM customization, ELK observability stack implementation.",
@@ -74,7 +74,7 @@ const team = [
     skills: ["JMeter", "Grinder", "ELK", "Oracle", "Splunk"],
   },
   {
-    name: "Franciszek Dudek",
+    name: "Maria Drągowska",
     title: "Senior Frontend Developer",
     email: "",
     bio: "Frontend developer specializing in patient and personnel portals for eHealth. Angular, React, and microfrontend module federation expert.",
